@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>
+        It's my birthday !
+    </title>
+    <link href="{% static 'birthday/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    {% if birthday %}
+        <h1>YES</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}
+</body>
+</html>
